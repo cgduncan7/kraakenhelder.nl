@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Kraak en Helder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="header">
+      <svg viewBox="0 0 300 100" preserveAspectRatio="slice" xmlns="http://www.w3.org/2000/svg">
+        <mask id="trim">
+          <rect
+            width="300"
+            height="100"
+            x="0"
+            y="0"
+            fill="white"
+          />
+          <ellipse
+            cx="150"
+            cy="100"
+            rx="80"
+            ry="60"
+            fill="black"
+          />
+          <ellipse
+            cx="75"
+            cy="100"
+            rx="25"
+            ry="25"
+            fill="black"
+          />
+          <ellipse
+            cx="225"
+            cy="100"
+            rx="25"
+            ry="25"
+            fill="black"
+          />
+        </mask>
+        <rect
+          width="300"
+          height="100"
+          x="0"
+          y="0"
+          fill="green"
+          mask="url(#trim)"
+        />
+
+        <mask id="edge">
+          <ellipse
+            cx="100"
+            cy="100"
+            rx="85"
+            ry="70"
+            fill="white"
+          />
+          <ellipse
+            cx="25"
+            cy="100"
+            rx="35"
+            ry="35"
+            fill="white"
+          />
+          <ellipse
+            cx="175"
+            cy="100"
+            rx="35"
+            ry="35"
+            fill="white"
+          />
+          <ellipse
+            cx="100"
+            cy="100"
+            rx="85"
+            ry="65"
+            fill="black"
+          />
+          <ellipse
+            cx="25"
+            cy="100"
+            rx="30"
+            ry="30"
+            fill="black"
+          />
+          <ellipse
+            cx="175"
+            cy="100"
+            rx="30"
+            ry="30"
+            fill="black"
+          />
+          <rect
+            width="100"
+            height="5"
+            x="50"
+            y="95"
+            fill="black"
+          /> 
+        </mask>
+
+        <rect
+          width="300"
+          height="100"
+          x="0"
+          y="0"
+          fill="yellow"
+          mask="url(#edge)"
+        />
+      </svg>
+      <h1>
+        <a href="/">Kraak en Helder</a>
+      </h1>
+      {{ if (ne .Title "Kraak en Helder") }}
+        <h2>{{ .Title }}</h2>
+      {{ end }}
+    </div>
+    <div class="leftbar">
+      <ul>
+        {{- range site.Menus.main }}
+          <li>
+            <a href="{{ .URL }}">
+              {{ .Name }}
+            </a>
+          </li>
+        {{- end }}
+      </ul>
+    </div>
+    <div class="rightbar">
+      <span>Upcoming events</span>
+    </div>
+    <div class="main">
+      {{ block "main" . }}
+      {{ end }}
+    </div>
+    <div class="footer">
+      {{ block "footer" . }}
+      {{ end }}
+    </div>
+  </body>
+</html>

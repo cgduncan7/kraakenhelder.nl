@@ -1,0 +1,4 @@
+baseURL = 'https://kraakenhelder.nl/'
+languageCode = 'nl-nl'
+title = 'Kraak en Helder'
+sectionPagesMenu = 'main'
