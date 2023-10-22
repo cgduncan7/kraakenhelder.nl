@@ -18,7 +18,7 @@ body {
   grid-template-columns: 20% 1fr 20%;
 }
 
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
   body {
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@ div.header > svg {
   width: 100%;
 }
 
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
   div.header {
     z-index:1;
     position: relative;
@@ -116,7 +116,7 @@ div.leftbar > ul > li > a {
   }
 }
 
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
   div.leftbar {
     top: 0;
     bottom: 0;
@@ -163,7 +163,7 @@ div.rightbar {
   filter: drop-shadow(-3px 0px 5px rgb(0 0 0 / 0.25));
 }
 
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
   div.rightbar {
     top: 0;
     bottom: 0;
@@ -189,7 +189,7 @@ div.main {
   align-items: center;
 }
 
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
   div.main {
     width: auto;
     height: auto;
@@ -208,7 +208,7 @@ div.footer {
   grid-column: 2;
 }
 
-@media screen and (orientation: portrait) {
+@media (orientation: portrait) {
   div.footer {
     height: 10%;
   }
