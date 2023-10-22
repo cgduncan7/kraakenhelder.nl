@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <div class="main">
+      <h2>Onder verbouw</h2>
+      {{/*  {{ block "main" . }}
+      {{ end }}  */}}
+    </div>
+    <div class="leftbar">
+      <span>Menu</span>
+      <ul>
+        {{- range site.Menus.main }}
+          <li>
+            {{/*  <a href="{{ .URL }}">  */}}
+            <a href="#">
+              {{ .Name }}
+            </a>
+          </li>
+        {{- end }}
+      </ul>
+    </div>
+    <div class="rightbar">
+      {{/*  <span>Upcoming events</span>  */}}
+    </div>
     <div class="header">
       <svg viewBox="0 0 300 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="trim">
@@ -112,28 +133,6 @@
         <h2>{{ .Title }}</h2>
       {{ end }}
     </div>
-    <div class="leftbar">
-      {{/*  <ul>
-        {{- range site.Menus.main }}
-          <li>
-            <a href="{{ .URL }}">
-              {{ .Name }}
-            </a>
-          </li>
-        {{- end }}
-      </ul>  */}}
-    </div>
-    <div class="rightbar">
-      {{/*  <span>Upcoming events</span>  */}}
-    </div>
-    <div class="main">
-      <h2>Onder verbouw</h2>
-      {{/*  {{ block "main" . }}
-      {{ end }}  */}}
-    </div>
-    <div class="footer">
-      {{ block "footer" . }}
-      {{ end }}
-    </div>
+    <script src="script.js"></script>
   </body>
 </html>
