@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="header">
-      <svg viewBox="0 0 300 100" preserveAspectRatio="slice" xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 300 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <mask id="trim">
           <rect
             width="300"
@@ -22,25 +22,26 @@
           <ellipse
             cx="150"
             cy="100"
-            rx="80"
+            rx="100"
             ry="60"
             fill="black"
           />
           <ellipse
-            cx="75"
+            cx="50"
             cy="100"
-            rx="25"
+            rx="50"
             ry="25"
             fill="black"
           />
           <ellipse
-            cx="225"
+            cx="250"
             cy="100"
-            rx="25"
+            rx="50"
             ry="25"
             fill="black"
           />
         </mask>
+
         <rect
           width="300"
           height="100"
@@ -52,54 +53,47 @@
 
         <mask id="edge">
           <ellipse
-            cx="100"
+            cx="150"
             cy="100"
-            rx="85"
+            rx="110"
             ry="70"
             fill="white"
           />
           <ellipse
-            cx="25"
+            cx="50"
             cy="100"
-            rx="35"
+            rx="60"
             ry="35"
             fill="white"
           />
           <ellipse
-            cx="175"
+            cx="250"
             cy="100"
-            rx="35"
+            rx="60"
             ry="35"
             fill="white"
           />
           <ellipse
-            cx="100"
+            cx="150"
             cy="100"
-            rx="85"
+            rx="105"
             ry="65"
             fill="black"
           />
           <ellipse
-            cx="25"
+            cx="50"
             cy="100"
-            rx="30"
+            rx="55"
             ry="30"
             fill="black"
           />
           <ellipse
-            cx="175"
+            cx="250"
             cy="100"
-            rx="30"
+            rx="55"
             ry="30"
             fill="black"
           />
-          <rect
-            width="100"
-            height="5"
-            x="50"
-            y="95"
-            fill="black"
-          /> 
         </mask>
 
         <rect
@@ -119,7 +113,7 @@
       {{ end }}
     </div>
     <div class="leftbar">
-      <ul>
+      {{/*  <ul>
         {{- range site.Menus.main }}
           <li>
             <a href="{{ .URL }}">
@@ -127,14 +121,15 @@
             </a>
           </li>
         {{- end }}
-      </ul>
+      </ul>  */}}
     </div>
     <div class="rightbar">
-      <span>Upcoming events</span>
+      {{/*  <span>Upcoming events</span>  */}}
     </div>
     <div class="main">
-      {{ block "main" . }}
-      {{ end }}
+      <h2>Onder verbouw</h2>
+      {{/*  {{ block "main" . }}
+      {{ end }}  */}}
     </div>
     <div class="footer">
       {{ block "footer" . }}
