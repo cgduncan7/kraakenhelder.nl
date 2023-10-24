@@ -2,33 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Kraak en Helder</title>
+    <title>{{ .Site.Title }}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    {{ $options := dict "transpiler" "libsass" "targetPath" "css/style.css" }}
+    {{ with resources.Get "sass/root.scss" | toCSS $options | minify | fingerprint }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    {{ end }}
   </head>
   <body>
-    <div class="main">
-      <h2>Onder verbouw</h2>
-      {{/*  {{ block "main" . }}
-      {{ end }}  */}}
+    <div class="content">
+      {{ block "content" . }}
+      {{ end }}
     </div>
-    <div class="leftbar">
+    <div class="bar leftbar">
       <span>Menu</span>
       <ul>
         {{- range site.Menus.main }}
           <li>
-            {{/*  <a href="{{ .URL }}">  */}}
-            <a href="#">
+            <a href="{{ .URL }}">
+            {{/*  <a href="#">  */}}
               {{ .Name }}
             </a>
           </li>
         {{- end }}
       </ul>
     </div>
-    <div class="rightbar">
-      {{/*  <span>Upcoming events</span>  */}}
+    <div class="bar rightbar">
+      {{ partial "future-events" }} 
     </div>
     <div class="header">
       <svg viewBox="0 0 300 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,11 +66,12 @@
         </mask>
 
         <rect
+          class="header-base"
           width="300"
           height="100"
           x="0"
           y="0"
-          fill="green"
+          fill="#000000"
           mask="url(#trim)"
         />
 
@@ -118,21 +121,22 @@
         </mask>
 
         <rect
+          class="header-trim"
           width="300"
           height="100"
           x="0"
           y="0"
-          fill="yellow"
+          fill="#000000"
           mask="url(#edge)"
         />
       </svg>
       <h1>
-        <a href="/">Kraak en Helder</a>
+        <a href="{{ .Site.BaseURL}}">Kraak en Helder</a>
       </h1>
       {{ if (ne .Title "Kraak en Helder") }}
         <h2>{{ .Title }}</h2>
       {{ end }}
     </div>
-    <script src="script.js"></script>
+    <script src="{{ .Site.BaseURL }}script.js"></script>
   </body>
 </html>

@@ -1,0 +1,19 @@
+@import 'reset';
+@import 'colors';
+@import 'fonts';
+@import 'responsive';
+@import 'header';
+@import 'content';
+@import 'bars';
+
+body {
+  display: grid;
+  grid-template-rows: 300px 1fr 20%;
+  grid-template-columns: 20% 1fr 20%;
+
+  @include mobile() {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+}

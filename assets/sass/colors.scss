@@ -1,0 +1,15 @@
+$red: #cf0f0f;
+$green: #466405;
+$orange: #FBB13C;
+$lightGreen: #bbd686;
+$black: #0b2027;
+$white: #e6e6e6;
+
+@function getFontColor($background) {
+  $darkColors: ($red $green $black);
+  @if index($darkColors, $background) != null {
+    @return $white;
+  } @else {
+    @return $black;
+  }
+}
