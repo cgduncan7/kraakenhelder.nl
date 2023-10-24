@@ -1,4 +1,6 @@
----
-menu: main
-title: Cursus
----
++++
+menu = 'main'
+title = 'Cursus'
++++
+
+Cursus

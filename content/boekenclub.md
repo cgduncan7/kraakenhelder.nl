@@ -1,6 +1,6 @@
----
-menu: main
-title: Boekenclub
----
++++
+menu = 'main'
+title = 'Boekenclub'
++++
 
-Test
+Boekenclub
