@@ -1,4 +1,6 @@
 baseURL = 'https://www.collinduncan.com/kraakenhelder.nl/'
-languageCode = 'nl-nl'
+defaultContentLanguage = 'nl-nl'
 title = 'Kraak en Helder'
 sectionPagesMenu = 'main'
+enableRobotsTXT = true
+buildFuture = true
