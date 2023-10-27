@@ -1,6 +1,6 @@
 +++
 menu = 'main'
-title = 'Book recommendations'
+title = 'Boekentips'
 +++
 
-Book recommendations
+Boekentips
