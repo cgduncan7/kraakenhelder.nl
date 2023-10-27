@@ -1,4 +1,5 @@
 +++
+menu = 'main'
 title = 'Book recommendations'
 +++
 

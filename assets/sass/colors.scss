@@ -13,3 +13,11 @@ $white: #e6e6e6;
     @return $black;
   }
 }
+
+@function lighter($color) {
+  @return scale-color($color, $lightness: +10%);
+}
+
+@function darker($color) {
+  @return scale-color($color, $lightness: -10%); 
+}

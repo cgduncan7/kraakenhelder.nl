@@ -1,49 +1,39 @@
 div.bar {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: 0;
+  height: calc(100% - 300px);
+  width: 15%;
   background: $red;
   padding-top: 300px;
-  grid-row: 1 / span 3;
   justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+  overflow: hidden;
 
-@keyframes maximize-leftbar {
-  0% {
-    width: 15%;
+  * {
+    color: getFontColor($red);
   }
 
-  100% {
-    width: 30%;
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
   }
-}
-
-@keyframes minimize-leftbar {
-  0% {
-    width: 30%;
-  }
-
-  100% {
-    width: 15%;
-  }
-}
-
-div.leftbar {
-  grid-column: 1;
-  filter: drop-shadow(3px, 0px, 5px, rgba(0, 0, 0, 0.25));
 
   ul {
     margin: 0;
     padding: 0;
     list-style: none;
 
-    li {
+    a {
+      min-width: 50%;
+      display: block;
       text-wrap: nowrap;
       padding: 20px;
+      margin: 10px;
+      background: lighter($red);
 
-      a {
+      * {
         display: inline-block;
         height: 100%;
         width: 100%;
@@ -53,16 +43,8 @@ div.leftbar {
   }
 
   @include mobile() {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    width: 15%;
-    height: auto;
-    position: absolute;
-    overflow: hidden;
-
     &.maximized {
-      animation-name: maximize-leftbar;
+      animation-name: maximize-bar;
       animation-duration: 0.5s;
       animation-direction: normal;
       animation-fill-mode: forwards;
@@ -73,7 +55,7 @@ div.leftbar {
     }
 
     &.minimized {
-      animation-name: minimize-leftbar;
+      animation-name: minimize-bar;
       animation-duration: 0.5s;
       animation-direction: normal;
       animation-fill-mode: forwards;
@@ -89,17 +71,38 @@ div.leftbar {
   }
 }
 
-div.rightbar {
-  grid-column: 3;
-  filter: drop-shadow(-3px, 0px, 5px, rgba(0, 0, 0, 0.25));
+$maxWidth: 45%;
+$minWidth: 15%;
 
-  @include mobile() {
-    top: 0;
-    bottom: 0;
-    right: 0px;
-    width: 15%;
-    height: auto;
-    position: absolute;
-    overflow: hidden;
+@keyframes maximize-bar {
+  0% {
+    width: $minWidth;
   }
+
+  100% {
+    width: $maxWidth;
+  }
+}
+
+@keyframes minimize-bar {
+  0% {
+    width: $maxWidth;
+  }
+
+  100% {
+    width: $minWidth;
+  }
+}
+
+div.leftbar {
+  left: 0;
+  grid-column: 1;
+  filter: drop-shadow(3px 0px 5px rgba(0, 0, 0, 0.25));
+}
+
+div.rightbar {
+  right: 0;
+  grid-column: 3;
+  filter: drop-shadow(-3px 0px 5px rgba(0, 0, 0, 0.25));
+
 }

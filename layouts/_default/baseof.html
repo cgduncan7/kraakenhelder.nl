@@ -15,22 +15,12 @@
     <div class="content">
       {{ block "content" . }}
       {{ end }}
-    </div>
-    <div class="bar leftbar">
-      <span>Menu</span>
-      <ul>
-        {{- range site.Menus.main }}
-          <li>
-            <a href="{{ .URL }}">
-            {{/*  <a href="#">  */}}
-              {{ .Name }}
-            </a>
-          </li>
-        {{- end }}
-      </ul>
-    </div>
-    <div class="bar rightbar">
-      {{ partial "future-events" }} 
+      <div class="bar leftbar">
+        {{ partial "menu" }}
+      </div>
+      <div class="bar rightbar">
+        {{ partial "future-events" }} 
+      </div>
     </div>
     <div class="header">
       <svg viewBox="0 0 300 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
@@ -131,11 +121,8 @@
         />
       </svg>
       <h1>
-        <a href="{{ .Site.BaseURL}}">Kraak en Helder</a>
+        <a href="{{ .Site.BaseURL}}">{{ .Site.Title }}</a>
       </h1>
-      {{ if (ne .Title "Kraak en Helder") }}
-        <h2>{{ .Title }}</h2>
-      {{ end }}
     </div>
     <script src="{{ .Site.BaseURL }}script.js"></script>
   </body>
