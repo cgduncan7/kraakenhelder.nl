@@ -13,3 +13,24 @@ html {
 body {
   margin: 0;
 }
+
+h1, h2, h3, h4, h5 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 5vmin;
+}
+
+h2 {
+  font-size: 4vmin;
+}
+
+h3 {
+  font-size: 3vmin;
+}
+
+p, span, a {
+  font-size: 1.8vmin;
+}

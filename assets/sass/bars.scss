@@ -43,6 +43,8 @@ div.bar {
   }
 
   @include mobile() {
+    padding-top: 400px;
+
     &.maximized {
       animation-name: maximize-bar;
       animation-duration: 0.5s;

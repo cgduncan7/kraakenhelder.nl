@@ -15,4 +15,8 @@ div.content {
   * {
     color: getFontColor($orange);
   }
+
+  @include mobile() {
+    padding-top: 300px;
+  }
 }
