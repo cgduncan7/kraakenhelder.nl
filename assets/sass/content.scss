@@ -16,6 +16,17 @@ div.content {
   * {
     color: getFontColor($orange);
     font-size: getFontSize("s");
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: getFontSize("xl");
+    text-align: center;
+  }
+
+  h2 {
+    font-size: getFontSize("l");
+    text-align: center;
   }
 
   @include mobile() {
