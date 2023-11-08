@@ -33,6 +33,7 @@ div.header {
 
   & * {
     color: getFontColor($green);
+    font-size: getFontSize("xl");
   }
 }
 

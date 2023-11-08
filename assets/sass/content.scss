@@ -8,12 +8,14 @@ div.content {
   background: $orange;
   width: 100%;
   padding-top: 200px;
-  padding-left: calc(15% + 50px);
-  padding-right: calc(15% + 50px);
+  padding-left: calc(20% + 50px);
+  padding-right: calc(20% + 50px);
   align-items: center;
+  font-size: getFontSize("s");
 
   * {
     color: getFontColor($orange);
+    font-size: getFontSize("s");
   }
 
   @include mobile() {

@@ -2,7 +2,7 @@ div.bar {
   position: absolute;
   top: 0;
   height: calc(100% - 300px);
-  width: 15%;
+  width: 20%;
   background: $red;
   padding-top: 300px;
   justify-self: center;
@@ -18,6 +18,8 @@ div.bar {
   h3 {
     text-align: center;
     text-transform: uppercase;
+    font-size: getFontSize("s");
+    text-decoration: underline;
   }
 
   ul {
@@ -28,22 +30,22 @@ div.bar {
     a {
       min-width: 50%;
       display: block;
-      text-wrap: nowrap;
       padding: 20px;
       margin: 10px;
-      background: lighter($red);
 
       * {
         display: inline-block;
         height: 100%;
         width: 100%;
         text-align: center;
+        font-size: getFontSize("s");
       }
     }
   }
 
   @include mobile() {
     padding-top: 400px;
+    height: calc(100% - 400px);
 
     &.maximized {
       animation-name: maximize-bar;
@@ -73,8 +75,8 @@ div.bar {
   }
 }
 
-$maxWidth: 45%;
-$minWidth: 15%;
+$maxWidth: 47%;
+$minWidth: 20%;
 
 @keyframes maximize-bar {
   0% {

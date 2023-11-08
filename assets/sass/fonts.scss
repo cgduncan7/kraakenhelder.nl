@@ -1,3 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap');
 
 $mainFont: 'EB Garamond', serif;
+
+$xsFontSize: 2vmin;
+$sFontSize: 3vmin;
+$mFontSize: 3.5vmin;
+$lFontSize: 4vmin;
+$xlFontSize: 4.5vmin;
+
+@function getFontSize($size) {
+  @if $size == "xs" {
+    @return $xsFontSize;
+  } @else if $size == "s" {
+    @return $sFontSize;
+  } @else if $size == "m" {
+    @return $mFontSize;
+  } @else if $size == "l" {
+    @return $lFontSize;
+  } @else if $size == "xl" {
+    @return $xlFontSize;
+  }
+  @return $mFontSize;
+}
