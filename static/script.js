@@ -19,4 +19,31 @@ function setupMobileBars() {
   })
 }
 
+function setupForm() {
+  const form = document.getElementById('signupForm')
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault()
+    const [name, email, phoneNumber] = [
+      e.currentTarget.name.value,
+      e.currentTarget.email.value,
+      e.currentTarget.phoneNumber.value
+    ]
+    const resp = await fetch(
+      'http://localhost:3000/registration',
+      {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, phoneNumber }),
+      }
+    )
+    form.reset()
+    if (resp.ok) {
+      window.alert('Inschrijving voltooid!')
+    } else {
+      window.alert('Er is iets misgegaan.')
+    }
+  })
+}
+
+setupForm()
 setupMobileBars()

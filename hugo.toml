@@ -3,3 +3,6 @@ defaultContentLanguage = 'nl-nl'
 title = 'Kraak & Helder'
 enableRobotsTXT = true
 buildFuture = true
+
+[markup.goldmark.renderer]
+unsafe= true
