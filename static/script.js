@@ -29,7 +29,7 @@ function setupForm() {
       e.currentTarget.phoneNumber.value
     ]
     const resp = await fetch(
-      'http://localhost:3000/registration',
+      'https://home.collinduncan.com/server.kraakenhelder.nl/registration',
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
