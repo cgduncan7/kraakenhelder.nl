@@ -3,7 +3,7 @@ menu = 'main'
 title = 'Boekenclub'
 +++
 
-Elke tweede zondag van de maand om 15:00 komen we bij elkaar voor de NT2 Boekenclub in het Torpedo Theater in hartje Amsterdam, om over een boek te praten en een biertje of een kopje koffie te drinken. Lijkt het je leuk? Schrijf je dan snel in!
+Elke zeven weken komen we op zondag om 15:00 bij elkaar voor de NT2 Boekenclub in het Torpedo Theater in hartje Amsterdam, om over een boek te praten en een biertje of een kopje koffie te drinken. Lijkt het je leuk? Schrijf je dan snel in!
 
 We lezen bestsellers die speciaal zijn aangepast (opnieuw geschreven) op A2/B1-niveau. Bekijk hier alvast de boeken: www.eenvoudigcommuniceren.nl
 
