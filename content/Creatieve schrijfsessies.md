@@ -5,7 +5,8 @@ title = 'Creatieve schrijfsessies'
 
 Vanaf januari 2024 organiseren wij, Iris Brouwers en Lucy Helder, een serie creatieve schrijfsessies voor mensen voor wie Nederlands de tweede taal is. In andere woorden, een creatieve schrijfcursus voor non-native Dutch speakers. Tijdens elke bijeenkomst werken we met verschillende opdrachten toe naar het schrijven van een kort verhaal. Daarnaast selecteren Iris en Lucy korte verhalen van Nederlandse schrijvers, om thuis te lezen ter inspiratie.
 
-De kosten zijn 280 euro voor zeven zondagssessies van 16:00 tot 19:00 met afsluitende voorleesavond.
+De cursus kost 280 euro voor zeven zondagssessies van 16:00 tot 19:00 met afsluitende voorleesavond.
+Een week voor het begin van de cursus krijg je een e-mail met de betaallink en de informatie over de cursus.
 
 <form id="signupForm">
   <input id="name" name="name" type="text" placeholder="Naam" required="true">
