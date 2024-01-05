@@ -21,6 +21,7 @@ function setupMobileBars() {
 
 function setupForm() {
   const form = document.getElementById('signupForm')
+  if (form == null) return
   form.addEventListener('submit', async (e) => {
     e.preventDefault()
     const [name, email, phoneNumber] = [
