@@ -1,4 +1,7 @@
-+++ title = 'De Houthavens' draft = false +++
++++
+title = 'De Houthavens'
+draft = false
++++
 
 Als ik voor het raam in mijn appartement op de derde verdieping sta, geniet ik van het uitzicht. Het is de derde vrijdag in januari en het weer is verrassend mooi. De zon schijnt. De vogels fluiten. De lucht is fris. Het is koud - drie graden vandaag - maar het voelt als een vroeg begin van de lente. Er ligt nog wat sneeuw op het grote grasveld met drie kale bomen naast de weg vlak voor mijn appartement. Het is niet druk, er rijden maar een paar auto’s voorbij. Een elektrische bus maakt zijn karakteristieke geluid, een hoge toon. Aan de andere kant van het grasveld staan nieuwe appartementencomplexen, omringd door de grachten. Ze zien eruit als gemoderniseerde herenhuizen. Op het dak van een van de gebouwen staat een grappige sculptuur: een zittende blauwe appel met rode benen en rode laarzen hangend naar beneden. De gebouwen spiegelen in het stille water van de grachten. 
 
