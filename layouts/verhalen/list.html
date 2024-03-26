@@ -1,0 +1,16 @@
+{{ define "content" }}
+  <div class="title">
+    <h2>{{ .Title }}</h2>
+  </div>
+  <div class="contents">
+    {{ .Content }}
+  </div>
+  {{ range .Pages }}
+    <a class='verhalen' href="{{ .Permalink }}">
+      <h5>{{ .Title }}</h5>
+      {{ if .Params.Author }}
+        <span>{{ .Params.Author }}</span>
+      {{ end }}
+    </a>
+  {{ end }}
+{{ end }}

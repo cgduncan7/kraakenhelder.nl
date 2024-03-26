@@ -1,8 +1,9 @@
 +++
 title = 'De Houthavens'
 draft = false
+[params]
+  author = "Justyna"
 +++
-
 Als ik voor het raam in mijn appartement op de derde verdieping sta, geniet ik van het uitzicht. Het is de derde vrijdag in januari en het weer is verrassend mooi. De zon schijnt. De vogels fluiten. De lucht is fris. Het is koud - drie graden vandaag - maar het voelt als een vroeg begin van de lente. Er ligt nog wat sneeuw op het grote grasveld met drie kale bomen naast de weg vlak voor mijn appartement. Het is niet druk, er rijden maar een paar auto’s voorbij. Een elektrische bus maakt zijn karakteristieke geluid, een hoge toon. Aan de andere kant van het grasveld staan nieuwe appartementencomplexen, omringd door de grachten. Ze zien eruit als gemoderniseerde herenhuizen. Op het dak van een van de gebouwen staat een grappige sculptuur: een zittende blauwe appel met rode benen en rode laarzen hangend naar beneden. De gebouwen spiegelen in het stille water van de grachten. 
 
 Aan de overkant van de straat, aan de rechterkant, is een kinderopvang. Het is de laatste dag van de week. Er zijn tientallen opgewonden kinderen in kleurrijke jassen aan het spelen. De kou maakt ze niet bang. Ze zijn blij dat het bijna weekend is. Ze praten en lachen. Af en toe hoor ik een kreet van opwinding. Drie jongens zijn aan het voetballen. Ze zijn niet ouder dan tien jaar, één is iets langer dan de andere twee. Het is duidelijk dat hij iets ouder, sterker en dominanter is. Hij is degene met de bal. Zodra een van de kleinere jongens de bal pakt, duurt het niet lang voordat de langere jongen hem weer terug overneemt en wegrent. Hij wil de bal zo lang mogelijk bij zichzelf houden. De jongen met rood, krullend haar lijkt niet echt geïnteresseerd in de bal. Hij rent een paar stappen, stopt en probeert niet meer om de bal af te pakken. Volgens mij is hij niet echt dol op voetbal. Of vindt hij het gedrag van de oudere jongen niet leuk. "Ik ook niet.", denk ik, en loop naar de keuken om mijn derde kopje koffie te halen.
