@@ -4,5 +4,7 @@ title = 'Kraak & Helder'
 enableRobotsTXT = true
 buildFuture = true
 
+disableKinds=['taxonomy']
+
 [markup.goldmark.renderer]
 unsafe= true
