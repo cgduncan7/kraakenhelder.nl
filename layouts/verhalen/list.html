@@ -8,8 +8,8 @@
   {{ range .Pages }}
     <a class='verhalen' href="{{ .Permalink }}">
       <h5>{{ .Title }}</h5>
-      {{ if .Params.author }}
-        <span>{{ .Params.author }}</span>
+      {{ with .Params.author }}
+        <span>{{ . }}</span>
       {{ end }}
     </a>
   {{ end }}
