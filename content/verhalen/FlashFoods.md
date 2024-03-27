@@ -4,8 +4,11 @@ draft = false
 [params]
   author = "Justyna"
 +++
+
 27 juli 2023
+
 FlashFoods verlaat Portugal, Spanje en Italië op “ordelijke wijze” 
+
 FlashFoods kondigde zijn terugtrekking uit drie Europese landen aan. Het bedrijf verlaat Portugal, Spanje en Italië en blijft in het Verenigd Koninkrijk, Duitsland, Nederland en Turkije. De reden die FlashFoods geeft voor zijn vertrek is dat het bedrijf “de financiële middelen wil gebruiken op bestaande markten, waar de kans op operationele winstgevendheid groter is”. FlashFoods verklaarde dat de landen waar het blijft al “96% van de omzet genereren”. Wat betekent dit voor de werknemers in de getroffen landen? Het is al bekend dat het hele personeelsbestand van 1,560 mensen wordt ontslagen.
 
 
