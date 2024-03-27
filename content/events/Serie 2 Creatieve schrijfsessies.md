@@ -1,5 +1,5 @@
 +++
-title = 'Sessies creatief schrijven'
+title = 'Serie 2 Sessies creatief schrijven'
 date = 2024-04-14T15:00:00
 draft = false
 +++
