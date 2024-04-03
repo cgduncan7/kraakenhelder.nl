@@ -1,0 +1,13 @@
+div.main {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  width: 100%;
+
+  & > div {
+    padding-top: 200px;
+  }
+
+  @include mobile() {
+    grid-template-columns: 100px 1fr 100px;
+  }
+}

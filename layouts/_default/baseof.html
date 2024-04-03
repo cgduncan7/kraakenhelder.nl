@@ -12,11 +12,13 @@
     {{ end }}
   </head>
   <body>
-    <div class="content">
-      {{ block "content" . }}
-      {{ end }}
+    <div class="main">
       <div class="bar leftbar">
         {{ partial "menu" }}
+      </div>
+      <div class="content">
+        {{ block "content" . }}
+        {{ end }}
       </div>
       <div class="bar rightbar">
         {{ partial "future-events" }} 

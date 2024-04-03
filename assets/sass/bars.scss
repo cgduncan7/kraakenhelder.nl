@@ -1,25 +1,31 @@
 div.bar {
   padding: 0;
-  position: absolute;
+  width: 100%;
+  position: relative;
   top: 0;
-  height: calc(100% - 300px);
-  width: 20%;
+  bottom: 0;
   background: $red;
-  padding-top: 300px;
   justify-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  z-index: 1;
 
   * {
     color: getFontColor($red);
   }
 
   h3 {
+    padding-top: 100px;
+
+    @include mobile() {
+      padding-top: 200px;
+      width: 100px;
+    }
+
     text-align: center;
     text-transform: uppercase;
-    font-size: getFontSize("s");
+    font-size: getFontSize("xs");
     text-decoration: underline;
   }
 
@@ -39,14 +45,16 @@ div.bar {
         height: 100%;
         width: 100%;
         text-align: center;
-        font-size: getFontSize("s");
+        font-size: getFontSize("xs");
       }
     }
   }
 
   @include mobile() {
-    padding-top: 400px;
-    height: calc(100% - 400px);
+
+    & ul {
+      width: 200px;
+    }
 
     &.maximized {
       animation-name: maximize-bar;
@@ -56,6 +64,7 @@ div.bar {
       
       ul {
         visibility: visible;
+        overflow: visible;
       }
     }
 
@@ -67,6 +76,7 @@ div.bar {
 
       ul {
         visibility: hidden;
+        overflow: hidden;
       }
     }
 
@@ -76,8 +86,8 @@ div.bar {
   }
 }
 
-$maxWidth: 47%;
-$minWidth: 20%;
+$maxWidth: 200px;
+$minWidth: 100px;
 
 @keyframes maximize-bar {
   0% {
@@ -102,12 +112,13 @@ $minWidth: 20%;
 div.leftbar {
   left: 0;
   grid-column: 1;
+  justify-self: baseline;
   filter: drop-shadow(3px 0px 5px rgba(0, 0, 0, 0.25));
 }
 
 div.rightbar {
   right: 0;
   grid-column: 3;
+  justify-self: end;
   filter: drop-shadow(-3px 0px 5px rgba(0, 0, 0, 0.25));
-
 }

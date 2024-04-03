@@ -6,12 +6,23 @@ div.content {
   flex-direction: column;
   justify-self: center;
   background: none;
-  width: 100%;
-  padding-top: 200px;
-  padding-left: calc(20% + 50px);
-  padding-right: calc(20% + 50px);
   align-items: center;
   font-size: getFontSize("s");
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 100%;
+
+  & h1 { 
+    @include mobile() {
+      padding-top: 100px;
+    }
+  }
+
+  & .title {
+    @include mobile() {
+      padding-top: 100px;
+    }
+  }
 
   * {
     color: getFontColor($orange);
@@ -27,10 +38,6 @@ div.content {
   h2 {
     font-size: getFontSize("l");
     text-align: center;
-  }
-
-  @include mobile() {
-    padding-top: 300px;
   }
 }
 
