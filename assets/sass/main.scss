@@ -9,5 +9,6 @@ div.main {
 
   @include mobile() {
     grid-template-columns: 100px 1fr 100px;
+    overflow: hidden;
   }
 }
